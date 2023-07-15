@@ -7,7 +7,7 @@ import Digital from '../../containers/digital';
 // import '../../App.css';
 const Home = (props) => {
   return (
-    <div className='App'>
+    <div className='App-Content'>
         <Headers />
         <Interior />
         <Branding />

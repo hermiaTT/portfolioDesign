@@ -29,7 +29,7 @@ const Footer = () => (
         <li>NEW LIFE</li>
       </ul>
     </div>
-    <Flex className= 'footer_contact' color='black'>
+    <Flex className= 'footer_contact' color='#ffffff'>
       <Center className='footer_contact-item' >
         <Text>DARRENXYP@GMAIL.COM</Text>
       </Center>

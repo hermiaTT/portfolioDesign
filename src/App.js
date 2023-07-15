@@ -64,7 +64,7 @@ const AppWrapper = (props) => {
             <Route path='/works' element={<Works/>}/>
           </Routes>
         </ErrorBoundary>
-        <Divider mt="24px"/>
+        {/* <Divider mt="24px"/> */}
         <Footer />
     </div>
     // </React.Fragment>
