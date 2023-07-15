@@ -12,7 +12,7 @@ const Feature = ({ title, text, img = "",hidden=false }) => (
       <h1>{title}</h1>
     </div>
     {text &&
-    <div className="ws__features-container_feature-text">
+    <div className="features-container_feature-text">
       <p>{text}</p>
     </div>
     }

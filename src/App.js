@@ -5,11 +5,14 @@ import { Divider } from '@chakra-ui/react';
 // import './App.css';
 import ErrorBoundary from './ErrorBoundary';
 import Home from './view/Home';
+import InteriorPage from './view/InteriorPage';
 import Navbar from './components/navbar';
 import Footer from './containers/footer';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Works from './view/Works';
+
 
 const animateFrom = (elem,x,y) => {
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
@@ -57,6 +60,8 @@ const AppWrapper = (props) => {
         <ErrorBoundary>
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/interior' element={<InteriorPage/>}/>
+            <Route path='/works' element={<Works/>}/>
           </Routes>
         </ErrorBoundary>
         <Divider mt="24px"/>

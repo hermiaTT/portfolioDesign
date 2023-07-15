@@ -16,6 +16,7 @@ import heading3_3 from './heading3_3.png';
 import heading3_4 from './heading3_4.png';
 import heading3_5 from './heading3_5.png';
 import star from './star.png';
+import works_interior from './works_interior.png';
 import {} from './imports';
 export {
     interior,
@@ -35,5 +36,6 @@ export {
     heading3_3,
     heading3_4,
     heading3_5,
-    star
+    star,
+    works_interior
 }

@@ -5,11 +5,11 @@ import { heading1_1, heading2_1, heading2_2, heading2_3_4, heading2_5, heading2_
 const Header = () => {
   return (
     
-    <Flex className = "ws__header wrapper"
+    <Flex className = "header wrapper"
       height={['60vh', '60vh', '60vh', '70vh']}
     >
       <Heading as="h1">I’M DARREN <br/>HOW R U</Heading>
-      <Flex className='ws__header-content wrapper' paddingX={['1.5em', '1.5em', '1.5em', '15%']}>
+      <Flex className='header-content wrapper' paddingX={['1.5em', '1.5em', '1.5em', '15%']}>
         <div className='heading_content row_1'>
           <Image className='heading_star star1-1' src = {star} />
           <Image className = 'wrapper heading_word-wrap line_1' src ={heading1_1} />
