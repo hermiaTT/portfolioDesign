@@ -371,73 +371,7 @@
 
 
 
-/* 
 
-
-
-#footer_bar {
-  border: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: auto;
-  background: #FFC8D3;
-}
-
-#footer_bar ul {
-  padding: 5px 20px;
-  margin: 0;
-}
-
-#footer_bar li {
-    display: inline;
-    padding-left: 300px;
-    color: #4F4F4F;
-    font-size: 18px;
-}
-
-#footer_bar ul:first-child {
-  display: inline-block;
-  animation: footer_bar 120s linear infinite;
-  margin-left: -220%;
-}
-
-@media (min-width:2701px){#footer_bar ul:first-child {margin-left: -5000px;}}
-@media (max-width:2700px){#footer_bar ul:first-child {margin-left: -5300px;}}
-@media (max-width:2200px){#footer_bar ul:first-child {margin-left: -5800px;}}
-@media (max-width:1700px){#footer_bar ul:first-child {margin-left: -6300px;}}
-@media (max-width:1200px){#footer_bar ul:first-child {margin-left: -6800px;}}
-@media (max-width:767px){#footer_bar ul:first-child {margin-left: -7250px;}}
-@media (max-width:400px){#footer_bar ul:first-child {margin-left: -7600px;}}
-@media (max-width:200px){#footer_bar ul:first-child {margin-left: -7800px;}}
-
-#footer_bar ul:last-child {
-  display: inline-block;
-  animation: footer_bar2 120s linear infinite;
-  animation-delay: 60s;
-}
-
-@keyframes footer_bar {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes footer_bar2 {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-200%);
-  }
-}
-
-
-
-
- */
  .ws_footer{
   grid-template-columns: repeat(6,1fr);
   padding: 78px 0 48px 0;
@@ -466,36 +400,40 @@
 }
 
 
- #footer_bar {
-  border: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: auto;
-  background: #FFC8D3;
+.ws_footer .footer_bar {
+  height: 50px;
+  width: 100%;
+  /* background-image: url(https://sligoil.com/wp-content/uploads/2022/02/icons-long-01.svg); */
+  background-repeat: repeat-x;
+  background-size: 1000px auto;
+  animation: slide_left 5s infinite linear;
+  background-image: url('./assets/foot_bg.png');
 }
 
-#footer_bar ul {
-  padding: 5px 20px;
-  margin: 0;
-}
 
-#footer_bar li {
-    display: inline;
-    padding-right: 48px;
-    color: #4F4F4F;
-    font-size: 18px;
-}
+
 
 
 .ws_footer .footer_contact{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  height: 50px;
+  width: 100%;
+  /* background-image: url(https://sligoil.com/wp-content/uploads/2022/02/icons-long-01.svg); */
+  background-repeat: repeat-x;
+  background-size: 1000px auto;
+  animation: slide_right 10s infinite linear;
+  background-image: url('./assets/footer_contact.png');
+  
 }
 
-.ws_footer .footer_contact .footer_contact-item{
-  padding: 0 24px;
+@keyframes slide_left {
+  0% { background-position: 0; }
+  100% { background-position: -1000px; }
 }
+@keyframes slide_right {
+  0% { background-position: -1000px; }
+  100% { background-position: 0px; }
+}
+
 
 
 
