@@ -478,14 +478,21 @@
 
 .works_grid_content{
   margin: 110px 0;
+  flex-direction: column;
 }
 .works_grid_content.branding,
 .works_grid_content.digital{
   color:#F5F5F5;
 }
-
-
-.works_grid_left{
+.works_grid_top-content{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.works_grid_top-content-left{
+  flex-direction: column;
+  width: 30%;
+}
+.works_grid_top-content-left .works_grid_left{
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -493,12 +500,15 @@
   font-family: Roboto;
   
 }
-.works_grid_left.top{
+.works_grid_top-content-left .works_grid_left.top{
   align-items: center;
   height: 38%;
   font-size: 96px;
   font-weight: 600;
   line-height: 113px;
+}
+.works_grid_top-content-right{
+  width: 70%;
 }
 .works_grid_left.bottom{
   color: #FFFFFF;
@@ -534,7 +544,7 @@
     font-family: Roboto;
 font-size: 36px;
 font-weight: 500;
-line-height: 42px;
+/* line-height: 42px; */
 letter-spacing: 0em;
 
 }
@@ -549,17 +559,27 @@ letter-spacing: 0em;
 }
 .works_grid-description-wrap{
   margin-left: auto;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   margin-right: auto;
-  height: 100%;
+  align-items: center;
+  position: relative;
 }
-.works_grid-description-wrap p{
-  word-wrap: break-word;
-  width: 100%;
+.works_grid-description-wrap .works_grid-description-content{
+  width: 60%;
+  word-break: break-all;
+  display: flex;
+  padding: 48px;
   font-size: 16px;
+  font-weight: 400;
 }
-.works_next_page-icon{
+
+.works_grid-description-wrap  .works_next_page-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.works_grid-description-wrap  .works_next_page-icon{
   position: absolute !important;
   height: 60px;
   margin-bottom: 41px;
@@ -626,6 +646,9 @@ letter-spacing: 0em;
   .navbar {
       padding: 2rem 4rem;
   }
+  .works_grid_left.bottom {
+    font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -638,13 +661,23 @@ letter-spacing: 0em;
   .index_container-heading p {
       margin-top: 1rem;
   }
-  
+  .works_grid_left.bottom {
+    font-size: 12px;
+  }
+
+
+  .works_grid_left h3{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
 
   .navbar-menu {
       display: flex;
+  }
+  .works_grid_left.bottom {
+    font-size: 12px;
   }
 
 

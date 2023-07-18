@@ -30,310 +30,307 @@ const Works = (props) =>{
                 </Flex>
                 <TabPanels>
                     <TabPanel>
+
+
+
                         {/* interior  1*/}
-                        <Grid className="works_grid_content interior" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#FFC420'  >
-                                <div className="works_grid_left top">1</div>
-                                <div className="works_grid_left bottom">  
-                                    <Heading as="h3">RESIDENTIAL</Heading>
-                                        <p>Concept Development</p>
-                                        <p>Measurement</p>
-                                        <p>Space Planning</p>
-                                        <p>Furniture Suggestions</p>
-                                        <p>Rendering</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#FBB901' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#FBB901' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
+                        <Flex className="works_grid_content interior" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">1</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">RESIDENTIAL</Heading>
+                                            <p>Concept Development</p>
+                                            <p>Measurement</p>
+                                            <p>Space Planning</p>
+                                            <p>Furniture Suggestions</p>
+                                            <p>Rendering</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right"  bg='#FBB901' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#FBB901">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>                
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
                         {/* interior  2*/}
-                        <Grid className="works_grid_content interior" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#FFC420'  >
-                                <div className="works_grid_left top">2</div>
-                                <div className="works_grid_left bottom">  
-                                    <Heading as="h3">RETAIL</Heading>
-                                        <p>Concept Development</p>
-                                        <p>Measurement</p>
-                                        <p>Space Planning</p>
-                                        <p>Furniture Suggestions</p>
-                                        <p>Rendering</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#FBB901' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#FBB901' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
+                        <Flex className="works_grid_content interior" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">2</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">RESIDENTIAL</Heading>
+                                            <p>Concept Development</p>
+                                            <p>Measurement</p>
+                                            <p>Space Planning</p>
+                                            <p>Furniture Suggestions</p>
+                                            <p>Rendering</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right" bg='#FBB901' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#FBB901">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>      
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
+   
                     </TabPanel>
                     <TabPanel>
                         {/* branding  1*/}
-                        <Grid className="works_grid_content branding" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#075197'  >
-                                <div className="works_grid_left top" >1</div>
-                                <div className="works_grid_left bottom">  
-                                        <p>Self Project</p>
-                                    <Heading as="h3">BRANDING</Heading>
-                                        <p>Concept Development</p>
-                                        <p>Measurement</p>
-                                        <p>Space Planning</p>
-                                        <p>Furniture Suggestions</p>
-                                        <p>Rendering</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#075197' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#075197' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
+                        <Flex className="works_grid_content branding" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">1</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">RESIDENTIAL</Heading>
+                                            <p>Concept Development</p>
+                                            <p>Measurement</p>
+                                            <p>Space Planning</p>
+                                            <p>Furniture Suggestions</p>
+                                            <p>Rendering</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right"  bg='#075197' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#075197">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>   
-                   
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
+
                     </TabPanel>
                     <TabPanel>
                         {/* digital  1*/}
-                        <Grid className="works_grid_content digital" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#075197'  >
-                                <div className="works_grid_left top" >1</div>
-                                <div className="works_grid_left bottom">  
-                                    <Heading as="h3">VERZE</Heading>
-                                    <Heading as="h3">UI/UX Design</Heading>
+                        <Flex className="works_grid_content digital" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">1</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">UI/UX Design</Heading>
                                         <p>Research</p>
                                         <p>Persona</p>
                                         <p>User Flow</p>
                                         <p>Site Map</p>
                                         <p>User Test</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#F54F4F' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#494845' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#494845">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>   
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
+  
                         {/* digital  2*/}
-                        <Grid className="works_grid_content digital" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#075197'  >
-                                <div className="works_grid_left top" >2</div>
-                                <div className="works_grid_left bottom">  
-                                    <Heading as="h3">VERZE</Heading>
-                                    <Heading as="h3">UI/UX Design</Heading>
+                        <Flex className="works_grid_content digital" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">2</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">UI/UX Design</Heading>
                                         <p>Research</p>
                                         <p>Persona</p>
                                         <p>User Flow</p>
                                         <p>Site Map</p>
                                         <p>User Test</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#F54F4F' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#494845' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#494845">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>   
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
+  
                         {/* digital  3*/}
-                        <Grid className="works_grid_content digital" templateRows='repeat(4, 1fr)' templateColumns='repeat(4, 1fr)'>
-                            <GridItem rowSpan={3} colSpan={1} bg='#075197'  >
-                                <div className="works_grid_left top" >3</div>
-                                <div className="works_grid_left bottom">  
-                                    <Heading as="h3">VERZE</Heading>
-                                    <Heading as="h3">UI/UX Design</Heading>
+                        <Flex className="works_grid_content digital" >
+                            <Flex className="works_grid_top-content">
+                                <Flex className= "works_grid_top-content-left"bg='#FFC420'  >
+                                    <div className="works_grid_left top">3</div>
+                                    <div className="works_grid_left bottom">  
+                                        <Heading as="h3">UI/UX Design</Heading>
                                         <p>Research</p>
                                         <p>Persona</p>
                                         <p>User Flow</p>
                                         <p>Site Map</p>
                                         <p>User Test</p>
-                                </div>
-                            </GridItem>
-                            <GridItem rowSpan={3} colSpan={3} bg='#F54F4F' >      
-                                <Tabs variant='soft-rounded' colorScheme='green'>
-                                    <TabPanels>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <Image className='wrapper left' src={works_interior} width="100%"/>
-                                        </TabPanel>
-                                    </TabPanels>
-                                    <TabList>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                    </TabList>
-                                </Tabs>
-                            </GridItem>
-                            <GridItem  colSpan={4} bg='#494845' >
-                                <div className="works_grid-description-wrap">
-                                    <div style={{width: '22.5%'}}></div>
-                                    <div style={{width: '55%', display:'flex'}}>
-                                        <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                     </div>
-                                    <div style={{width: "22.5%", position:'relative'}}>
-                                        <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
-                                    </div>
+                                </Flex>
+                                <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
+                                    <Tabs variant='soft-rounded' colorScheme='green'>
+                                        <TabPanels>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                            <TabPanel>
+                                                <Image className='wrapper left' src={works_interior} width="100%"/>
+                                            </TabPanel>
+                                        </TabPanels>
+                                        <TabList>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </Flex>
+                            </Flex>
+                            <Flex className="works_grid-description-wrap" bg = "#494845">
+                                <div className="works_grid-description-content" >
+                                    <p>OLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDSOLIUADFSHBGUGADSFBIUGOBADFIGBAIDS</p>
                                 </div>
-                            </GridItem>
-                            </Grid>   
-
+                                <div className="works_next_page-btn" >
+                                    <IconButton fontSize='30px' className="works_next_page-icon" icon={<FaAngleDoubleRight />}/>
+                                </div>
+                            </Flex>                   
+                        </Flex>   
+  
+          
                     </TabPanel>
                     <TabPanel>
                         <p>three!</p>
