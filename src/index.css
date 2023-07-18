@@ -557,6 +557,9 @@ letter-spacing: 0em;
   border: none;
   padding: 0;
 }
+.works_grid_tab-index.onselected{
+  opacity: 0.75;
+}
 .works_grid-description-wrap{
   margin-left: auto;
   flex-direction: column;

@@ -3,14 +3,22 @@ import React from "react";
 
 import { useState } from "react";
 import { FaAngleDoubleRight} from "react-icons/fa";
-import { works_interior } from "../../assets/imports";
+import { brand, works_interior} from '../../assets/imports';
+
 import { color } from "framer-motion";
+import ImageTab from "../../components/field/ImageTab";
 
 const Works = (props) =>{
 
   const [tabIndex, setTabIndex] = useState(0);
 
   const tabs = ["INTERIOR SPACE", "BRANDING", "DIGITAL", "GRAPHIC"];
+  const interiorTab1 = [works_interior, works_interior,works_interior,works_interior]
+  const interiorTab2 = [works_interior, works_interior,works_interior,works_interior]
+  const brandingTab = [brand, brand,brand,brand]
+  const digitalTab1 = [works_interior, works_interior,works_interior,works_interior]
+  const digitalTab2 = [works_interior, works_interior,works_interior,works_interior]
+  const digitalTab3 = [works_interior, works_interior,works_interior,works_interior]
     return(
         <Flex className="works_wrapper">
             <Tabs variant="unstyled" width={'100%'} onChange={(index) => {setTabIndex(index);}}>
@@ -48,28 +56,7 @@ const Works = (props) =>{
                                     </div>
                                 </Flex>
                                 <Flex className="works_grid_top-content-right"  bg='#FBB901' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                    <ImageTab  resource={interiorTab1}/>
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#FBB901">
@@ -95,29 +82,8 @@ const Works = (props) =>{
                                             <p>Rendering</p>
                                     </div>
                                 </Flex>
-                                <Flex className="works_grid_top-content-right" bg='#FBB901' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                <Flex className="works_grid_top-content-right" bg='#FBB901' >                                       
+                                    <ImageTab  resource={interiorTab2}/>
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#FBB901">
@@ -147,28 +113,7 @@ const Works = (props) =>{
                                     </div>
                                 </Flex>
                                 <Flex className="works_grid_top-content-right"  bg='#075197' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                    <ImageTab  resource={brandingTab}/>
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#075197">
@@ -198,28 +143,7 @@ const Works = (props) =>{
                                     </div>
                                 </Flex>
                                 <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                    <ImageTab  resource={digitalTab1}/>
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#494845">
@@ -247,28 +171,8 @@ const Works = (props) =>{
                                     </div>
                                 </Flex>
                                 <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                <ImageTab  resource={digitalTab2}/>
+
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#494845">
@@ -296,28 +200,7 @@ const Works = (props) =>{
                                     </div>
                                 </Flex>
                                 <Flex className="works_grid_top-content-right"  bg='#F54F4F' >      
-                                    <Tabs variant='soft-rounded' colorScheme='green'>
-                                        <TabPanels>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <Image className='wrapper left' src={works_interior} width="100%"/>
-                                            </TabPanel>
-                                        </TabPanels>
-                                        <TabList>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                            <Tab className="works_grid_tab-index"><Image className='wrapper left' src={works_interior} width="100%"/></Tab>
-                                        </TabList>
-                                    </Tabs>
+                                    <ImageTab  resource={digitalTab3}/>
                                 </Flex>
                             </Flex>
                             <Flex className="works_grid-description-wrap" bg = "#494845">
@@ -329,8 +212,6 @@ const Works = (props) =>{
                                 </div>
                             </Flex>                   
                         </Flex>   
-  
-          
                     </TabPanel>
                     <TabPanel>
                         <p>three!</p>
