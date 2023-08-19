@@ -1,6 +1,8 @@
 import { combineReducers } from"redux";
-import AI from "./AI";
+import InteriorPage from './interiorPage';
+import BrandingPage from "./brandingPage";
 const reducers = combineReducers({
-    AI: AI
+    InteriorPage: InteriorPage,
+    BrandingPage: BrandingPage
 });
 export default reducers;

@@ -5,14 +5,19 @@ import { Divider } from '@chakra-ui/react';
 // import './App.css';
 import ErrorBoundary from './ErrorBoundary';
 import Home from './view/Home';
-import InteriorPage from './view/InteriorPage';
 import Navbar from './components/navbar';
-import Footer from './containers/footer';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Works from './view/Works';
-
+import Project2 from './view/Works/project2';
+import {useNavigate } from 'react-router-dom'; 
+import Project3 from './view/Works/project3';
+import Project6 from './view/Works/project6';
+import Project1 from './view/Works/project1';
+import Project4 from './view/Works/project4';
+import Project7 from './view/Works/project7';
+import Project8 from './view/Works/project8';
+import Project5 from './view/Works/project5';
 
 const animateFrom = (elem,x,y) => {
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
@@ -33,7 +38,8 @@ const hide=(elem)=> {
 
 const AppWrapper = (props) => {
 
-
+  const navigate = useNavigate();
+  
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
   useEffect(() => {
@@ -60,12 +66,18 @@ const AppWrapper = (props) => {
         <ErrorBoundary>
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/interior' element={<InteriorPage/>}/>
-            <Route path='/works' element={<Works/>}/>
+            <Route path='/project/1' element={<Project1/>}/>
+            <Route path='/project/2' element={<Project2/>}/>
+            <Route path='/project/3' element={<Project3/>}/>
+            <Route path='/project/4' element={<Project4/>}/>
+            <Route path='/project/5' element={<Project5/>}/>
+            <Route path='/project/6' element={<Project6/>}/>
+            <Route path='/project/7' element={<Project7/>}/>
+            <Route path='/project/8' element={<Project8/>}/>
           </Routes>
         </ErrorBoundary>
         {/* <Divider mt="24px"/> */}
-        <Footer />
+      
     </div>
     // </React.Fragment>
   )

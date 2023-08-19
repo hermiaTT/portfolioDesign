@@ -1,22 +1,26 @@
 import React from 'react';
-import { Image } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
+import { feature_project } from '../../assets/imports';
 
-const Feature = ({ title, text, img = "",hidden=false }) => (
-  <div className="features-container__feature">
-    {img &&
-        <div className="features-container__feature-img">
-            <Image src ={img} />
-        </div>
+const Feature = ({ title, text, img = "",isFeature=false, onClick }) => (
+  <Flex className="features-container__feature" onClick={onClick}>
+    {isFeature &&
+      <Image src={feature_project} style={{position: 'absolute', top: '-81px', left:'-76px',}}/>
     }
-    <div className="features-container__feature-title" > <div hidden={hidden}/>  
+    {img &&
+        <Flex className="features-container__feature-img">
+            <Image src ={img} />
+        </Flex>
+    }
+    <Flex className="features-container__feature-title" >   
       <h1>{title}</h1>
-    </div>
+    </Flex>
     {text &&
     <div className="features-container_feature-text">
       <p>{text}</p>
     </div>
     }
-  </div>
+  </Flex>
 );
 
 export default Feature;
