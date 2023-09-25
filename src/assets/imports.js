@@ -14,6 +14,7 @@ import star from './other/star.png';
 import footer_bg from './other/foot_bg.png';
 import arrow_left from './icon/arrow_left.png';
 import arrow_right from './icon/arrow_right.png';
+import arrow_down from './icon/arrow_down.png';
 
 import project_container from './home_project/project_container.png';
 import flowers from './home_project/flowers.png';
@@ -101,6 +102,15 @@ import project8_3 from './project8/img3.png';
 import feature_project from './other/feature_project.png';
 import footer from './other/footer.png';
 
+import info1 from './info/info1.png'
+import info2 from './info/info2.png'
+import info3 from './info/info3.png'
+import info4 from './info/info4.png'
+import info5 from './info/info5.png'
+import info6 from './info/info6.png'
+import info7 from './info/info7.png'
+import info8 from './info/info8.png'
+import info9 from './info/info9.png'
 
 import {} from './imports';
 export {
@@ -119,6 +129,7 @@ export {
     footer_bg,
     arrow_left,
     arrow_right,
+    arrow_down,
     
     project_container,
     flowers,
@@ -202,4 +213,14 @@ export {
     project8_1,
     project8_2,
     project8_3,
+
+    info1,
+    info2,
+    info3,
+    info4,
+    info5,
+    info6,
+    info7,
+    info8,
+    info9,
 }

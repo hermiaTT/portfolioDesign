@@ -18,6 +18,7 @@ import Project4 from './view/Works/project4';
 import Project7 from './view/Works/project7';
 import Project8 from './view/Works/project8';
 import Project5 from './view/Works/project5';
+import Info from './view/Info';
 
 const animateFrom = (elem,x,y) => {
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
@@ -74,6 +75,7 @@ const AppWrapper = (props) => {
             <Route path='/project/6' element={<Project6/>}/>
             <Route path='/project/7' element={<Project7/>}/>
             <Route path='/project/8' element={<Project8/>}/>
+            <Route path='/info' element={<Info/>}/>
           </Routes>
         </ErrorBoundary>
         {/* <Divider mt="24px"/> */}

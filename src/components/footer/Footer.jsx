@@ -13,7 +13,7 @@ import { footer } from '../../assets/imports';
 
 const Footer = () => (
   <Flex as="footer" className='footer'>
-    <Image src={footer} />
+    <Image src={footer} style={{width:'100%'}}/>
   </Flex>
   
 );

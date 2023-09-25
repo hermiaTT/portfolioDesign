@@ -1,11 +1,11 @@
 import React from 'react';
-import {Flex, Grid,Heading, Image} from '@chakra-ui/react'
-import { heading1_1, heading2_1, heading2_2, heading2_3_4, heading2_5, heading2_6, heading3_1, heading3_2, heading3_3, heading3_4, heading3_5, star } from '../../assets/imports';
+import {Flex, Grid,Heading, IconButton, Image} from '@chakra-ui/react'
+import { heading1_1, heading2_1, heading2_2, heading2_3_4, heading2_5, heading2_6, heading3_1, heading3_2, heading3_3, heading3_4, heading3_5, star, arrow_down } from '../../assets/imports';
 
 const Header = () => {
   return (
     
-    <Flex className = "header wrapper"
+    <Flex className = "header wrapper" direction={'column'}
       height={['60vh', '60vh', '60vh', '70vh']}
     >
       <Flex className='header-content wrapper' paddingX={['1.5em', '1.5em', '1.5em', '15%']}>
@@ -35,6 +35,7 @@ const Header = () => {
           <Image className='heading_star star3-2' src = {star} />
         </div>
       </Flex>
+      <a style={{alignSelf:'center', paddingTop:'20px'}}href='/#project'><Image src={arrow_down}/></a>
       
     </Flex>
   )

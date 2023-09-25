@@ -10,7 +10,7 @@ const Navbar = (props) => {
     navigate("/")
   }
   const worksPage = () => {
-    navigate("/works")
+    navigate("/project/1")
   }
   const InfoPage = () => {
     navigate("/info")

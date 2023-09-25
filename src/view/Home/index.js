@@ -91,7 +91,7 @@ const Home = (props) => {
         <Flex className='description'>
           <p>I believe that establishing a strong concept is primary for clients, and my expertise lies in understanding their unique characteristics and translating them into successful visual factors. </p>
         </Flex>
-        <Button className='btn'>VIEW PROJECT</Button>
+        <a href='/#work'className='btn'>VIEW PROJECT</a>
       </Flex>
       <Flex className='index_margin-section' bg= '#F8F8F8' />
     </div>
