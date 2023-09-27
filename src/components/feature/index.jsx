@@ -5,7 +5,7 @@ import { feature_project } from '../../assets/imports';
 const Feature = ({ title, text, img = "",isFeature=false, onClick }) => (
   <Flex className="features-container__feature" onClick={onClick}>
     {isFeature &&
-      <Image src={feature_project} style={{position: 'absolute', top: '-81px', left:'-76px',}}/>
+      <Image src={feature_project} className='featured-feature' />
     }
     {img &&
         <Flex className="features-container__feature-img">

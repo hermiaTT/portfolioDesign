@@ -32,7 +32,7 @@ const Project7 = (props) =>{
             </SubHeader>
             <Flex className="works_content-container" >
                 <ImageCard img={project7_1}/>
-                <Flex className="img_row">
+                <Flex className="img_row_g">
                     <Image src={project7_2}/>
                     <Image src={project7_3}/>
                 </Flex>

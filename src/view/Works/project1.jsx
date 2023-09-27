@@ -32,7 +32,7 @@ const Project1 = (props) =>{
                         <Flex className="colored">
                             <Text>This is the new way of Social Networking in Metaverse !</Text>
                         </Flex>
-                        <Flex style={{padding:"56px 0"}}>
+                        <Flex className='note-container'>
                             <Text className="note">*Please be aware that the project is still in progress. Only limited information can be presented.<br/><br/>*The project is still under NDA while the information presented is with the Verze.Inc.’s permission.</Text>
                         </Flex>
                     </Flex>

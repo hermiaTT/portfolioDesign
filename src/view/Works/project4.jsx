@@ -48,22 +48,22 @@ const Project4 = (props) =>{
                     </Flex>
             </SubHeader>
             <Flex className="works_content-container" >
-                <Flex style={{padding: '32px 4px'}}>
+                <Flex className='project4-img-container'style={{padding: '32px 4px'}}>
                     <ImageCard img={project4_1}/>
                     <ImageCard img={project4_2}/>
                     <ImageCard img={project4_3}/>
                 </Flex>
-                <Flex style={{padding: '32px 4px'}}>
+                <Flex className='project4-img-container' style={{padding: '32px 4px'}}>
                     <ImageCard img={project4_4}/>
                     <ImageCard img={project4_5} describe="Sketches"/>
                 </Flex>
                 <ImageCard className='img_card' img={project4_6} describe={'Illustrations'}/>
                 <CodeCard title="concept" concept={concept} colors={["#F1593A","#852A46", "#C91F3D", "#FFC40D"]}/>
-                <Flex className="img_row">
+                <Flex className="img_row_g">
                     <Image src={project4_7}/>
                     <Image src={project4_8}/>
                 </Flex>
-                <Flex className="img_row">
+                <Flex className="img_row_g">
                     <Image src={project4_9}/>
                     <Flex className="img_col">
                         <Image src={project4_10}/>

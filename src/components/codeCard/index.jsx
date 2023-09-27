@@ -5,6 +5,8 @@ const CodeCard = ({title, font ="",concept="", colors})=>{
     const isBranding =  title ==="branding";
     const isConcept = title ==="concept";
     const brandDes = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "0123456789"]
+    const width = 100/colors.length.toString()+"%";
+    console.log(""+ width);
     return(
         <Flex className="code_card-wrapper">
             {isBranding &&
@@ -44,7 +46,7 @@ const CodeCard = ({title, font ="",concept="", colors})=>{
                         {
                             colors.map((color,index)=>{
                                 return (
-                                    <Flex className="color_container">
+                                    <Flex className="color_container" style = {{width: width}}>
                                         <div className="color_block" style={{backgroundColor: color}}/>
                                         <Text>{color}</Text>
                                     </Flex>

@@ -6,6 +6,7 @@ import {useNavigate } from 'react-router-dom';
 
 const Navbar = (props) => {
   const navigate = useNavigate();
+  const [toggleMenu, setToggleMenu] = useState(false);
   const HomePage = () => {
     navigate("/")
   }
@@ -36,15 +37,28 @@ const Navbar = (props) => {
   return (
     <Flex className='navbar'>
       <div className = 'navbar-links'>
-        <p>
-        <button className="nav_link-item logo btn btn-success"
-                  onClick={HomePage}>Darren Xu
-          </button>
-          </p>
-        <div className='navbar-links_container'>
-          <Menu/>
+          <p>
+          <button className="nav_link-item logo btn btn-success"
+                    onClick={HomePage}>Darren Xu
+            </button>
+            </p>
+          <div className='navbar-links_container'>
+            <Menu/>
+          </div>
         </div>
-</div>
+        <div className='navbar-menu'>
+        {toggleMenu ? 
+          <RiCloseLine color="#000000" size = {27} onClick={()=>setToggleMenu(false)} />:
+          <RiMenu3Line color="#000000" size = {27} onClick={()=>setToggleMenu(true)} />
+        }
+        {toggleMenu &&(
+          <div className='navbar-menu_container scale-up-center'>
+            <div className='navbar-menu_container-links'>
+              <Menu/>
+            </div>
+          </div>
+        )}
+        </div>
     </Flex>
   )
 }

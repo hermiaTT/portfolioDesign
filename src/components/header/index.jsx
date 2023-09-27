@@ -13,7 +13,7 @@ const Header = () => {
           <Image className='heading_star star1-1' src = {star} />
           <Image className = 'wrapper heading_word-wrap line_1' src ={heading1_1} />
           <Image className='heading_star star1-2' src = {star} />
-          <Heading className='title' as="h1">I’M DARREN <br/>HOW R U</Heading>
+          <Heading className='title' as="h1">I	&#39;M<br/> DARREN <br/>HOW R U</Heading>
         </div>
         <div className='heading_content row_2'>
           <Image className = 'wrapper heading_word-wrap' src = {heading2_1}/>

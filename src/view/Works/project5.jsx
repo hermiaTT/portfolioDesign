@@ -27,44 +27,56 @@ const Project5 = (props) =>{
                     </Flex>
             </SubHeader>
             <Flex className="works_content-container" >
-                
-                <Flex className="img_row" style={{paddingTop: "180px"}}>
-                    <Flex className="img_col">
+                <div className="img_glry-container">
+                    <Flex className="img-box img1">
                         <Image src={project5_2}/>
-                        <Flex className="img_row">
-                            <Image src={project5_4}/>
-                            <Image src={project5_5}/>
-                        </Flex>
                     </Flex>
-                    <Flex className="img_col">
+                    <Flex className="img-box img2">
                         <Image src={project5_3}/>
+                    </Flex>
+                    <Flex className="img-box img3">
                         <Image src={project5_6}/>
                     </Flex>
-                </Flex>
-                <Flex className="img_row second">
-                    <Flex className="img_col second">
-                        <Image src={project5_7}/>
-                        <Flex className="img_row">
-                            <Image src={project5_9}/>
-                            <div className="pink"/>
-                        </Flex>
+                    <Flex className="img-box img4">
+                        <Image src={project5_4}/>
                     </Flex>
-                    <Image className="third" src={project5_8}/>
-                </Flex>
-                <Flex className="img_row abs-container">
-                    <div className="orange"/>
-                    <Image className="abs-img" src={project5_10}/>
-                    <Flex className="img_col abs-row">
+                    <Flex className="img-box img5">
+                        <Image src={project5_5}/>
+                    </Flex>
+                    </div>
+                <div className="img_glry-container-2">
+                    <Flex className="img-box img6">
+                        <Image src={project5_7}/>
+                    </Flex>
+                    <Flex className="img-box img7">
+                        <Image className="third" src={project5_8}/>
+                    </Flex>
+                    <Flex className="img-box img8">
+                        <Image src={project5_9}/>
+                    </Flex>
+                    <Flex className="img-box img9">
+                        <div className="pink"/>
+                    </Flex>
+                    <Flex className="img-box img10">
+                        <div className="orange"/>
+                    </Flex>
+                    <Flex className="img-box img11">
+                        <Image className="abs-img" src={project5_10}/>
+                    </Flex>
+                    <Flex className="img-box img12">
                         <Image src={project5_11}/>
+                    </Flex>
+                    <Flex className="img-box img13">
                         <div className="purple"/>
                     </Flex>
-                </Flex>
+                </div>
+        
                 <Flex className="img_col last">
-                    <Flex className="img_row">
+                    <Flex className="img_row_g">
                         <Image src={project5_12}/>
                         <Image src={project5_13}/>
                     </Flex>
-                    <Flex className="img_row">
+                    <Flex className="img_row_g">
                         <Image src={project5_14}/>
                         <Image src={project5_15}/>
                     </Flex>
